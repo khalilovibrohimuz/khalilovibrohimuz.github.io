@@ -1,12 +1,19 @@
-# Salom yaxshi insonlar!
+# Salom yaxshi insonlar
 
 Ushbu ombor loyihalarim bilan tanishtirish uchun yaratilgan.
+Github Pages orqali yaratgan barcha dasturlaringizni chiroyli
+usulda namoyish qila olish imkoniga ega bo'lishingiz mumkin.
+Men esa buni o'zim sinab ko'rishga qaror qildim.
+Aytgancha ushbu sayt har safar yangi loyiha yaratilganida o'zgartiriladi,
+chunki yanggi loyihaga havola qoldirish kerak bo'ladida
+
+## Havola
+
+Agar siz loyihalarim qiziq bo'lsa, quyidagi havola orqali tanishib chiqishingiz mumkin 🔗
 
 [khalilovibrohimuz.github.io](https://khalilovibrohimuz.github.io/)
 
-Ushbu omborga tashrif buyurganingiz uchun tashakkur.
-Agar siz loyihalarim qiziq bo'lsa, yuqorida qoldirilgan havola orqali sayohat qilib,
-tanishib chiqishingiz mumkin.
+## CharArt bilan hosil qilingan rasm 🖼️
 
 ```
 Hello from Khalilov Ibrohim
@@ -47,3 +54,5 @@ Hello from Khalilov Ibrohim
 %%%%%%%#;::,,....,.,.,,,.,,.,:####%%%%%%%%######===***++;;;;;;;;;;;::,                  ..,,,,,,,:,,
 %%%%%%:,,,...       . .... ,..=####%%%%%########=====***+++;;;;;;;:,,.                       .,:+*::
 ```
+
+## Ushbu omborga tashrif buyurganingiz uchun tashakkur 😊
