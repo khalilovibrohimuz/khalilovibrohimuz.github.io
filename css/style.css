@@ -1045,8 +1045,8 @@ section {
 
 pre {
     font-family: Courier, monospace;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 8%;
+    padding-right: 8%;
     padding-top: 20px;
     padding-bottom: 20px;
     border-radius: 20px;
