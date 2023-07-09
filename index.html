@@ -1,124 +1,171 @@
 <!DOCTYPE html>
 <html lang="uz">
     <head>
+
         <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
         <title>Khalilov Ibrohim's Portfolio</title>
-        <link rel="stylesheet" href="style.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="css/style.css">
     </head>
-    
-    <div class="background-image"></div>
 
     <body>
-        <header>
-            <div class="container">
-                <div class="logo">Kahlilov Ibrohim</div>
-                <nav>
-                    <input type="checkbox" id="toggle-menu">
-                    <label for="toggle-menu" class="menu-icon">&#9776;</label>
-                    <ul class="menu">
-                        <li><a href="#about">Men haqimda</a></li>
-                        <li><a href="#resume">Rezyume</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#interesting">Qiziqarli</a></li>
-                        <li><a href="#contact">Men bilan bog'lanish</a></li>
-                    </ul>
-                </nav>
+
+        <header class="header">
+        
+            <a href="" class="logo">Khalilov Ibrohim</a>
+            
+            <nav class="navbar">
+                
+                <div id="close-navbar" class="fas fa-times"></div>
+                <a href="#about">Men haqimda</a>
+                <a href="#resume">Rezyume</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#interesting">Qiziqarli</a>
+                <a href="#email">Email yuborish</a>
+            </nav>
+
+            <div class="icons">
+                <div id="menu-btn" class="fas fa-bars"></div>
             </div>
-        </header>
+        </header>        
+
         
 
-        <main>            
-            <section id="about">
-                <div class="container">
-                    <h2>Men haqimda</h2>
-                    <p>Salom, men Android dasturchiman. O'zim haqimda qisqacha ma'lumotlar...</p>
-                </div>
-            </section>
 
-            <section id="resume">
-                <div class="container">
-                    <h2>Rezyume</h2>
-                    <p>Bu mening tajribalarim va ma'lumotlarim to'g'risida qisqacha...</p>
-                </div>
-            </section>
 
-            <section id="portfolio">
-                <div class="container">
-                    <h2>Portfolio</h2>
-                    <p>Barcha loyihalarim bir joyda</p>
-                    <div class="project">
-                        <h3>Proyekt 1</h3>
-                        <p>Bu proyekt haqida qisqacha ma'lumotlar...</p>
+        <section id="about">
+            <h1 class="heading">Men haqimda</h1>
+            <p>Salom, men Android dasturchiman. O'zim haqimda qisqacha ma'lumotlar...</p>
+        </section>
+
+        <section id="resume">
+            <h1 class="heading">Rezyume</h1>
+            <p>Bu mening tajribalarim va ma'lumotlarim to'g'risida qisqacha...</p>
+        </section>
+
+        <section id="portfolio">
+            <h1 class="heading">Portfolio</h1>
+            <p>Barcha loyihalarim bir joyda</p>
+            <div class="project">
+                <h3>Proyekt 1</h3>
+                <p>Bu proyekt haqida qisqacha ma'lumotlar...</p>
+            </div>
+            <div class="project">
+                <h3>Proyekt 2</h3>
+                <p>Bu proyekt haqida qisqacha ma'lumotlar...</p>
+            </div>
+            <div class="project">
+                <h3>Proyekt 3</h3>
+                <p>Bu proyekt haqida qisqacha ma'lumotlar...</p>
+            </div>
+        </section>
+
+        <section id="interesting">
+            <h1 class="heading">Qiziqarli</h1>
+            <div class="interesting-project"></div>
+        </section>
+
+        <section id="email">
+            <h1 class="heading">Email yuborish</h1>
+            <form id="contact-form">
+                <input type="text" placeholder="Ism" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Xabaringiz" required></textarea>
+                <button type="submit">Jo'natish</button>
+            </form>
+        </section>
+
+        
+
+
+        <section id="social">
+
+            <h1 class="heading">Ijtimoiy tarmoqlar</h1>
+
+            <div class="swiper home-courses-slider">
+
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide slide">
+                        <div class="image">
+                            <a href="https://www.t.me/khalilov_ibrohim_uz/">
+                                <img src="/picture/telegram.svg" alt="Telegram">
+                            </a>
+                        </div>
                     </div>
-                    <div class="project">
-                        <h3>Proyekt 2</h3>
-                        <p>Bu proyekt haqida qisqacha ma'lumotlar...</p>
-                    </div>
-                    <div class="project">
-                        <h3>Proyekt 3</h3>
-                        <p>Bu proyekt haqida qisqacha ma'lumotlar...</p>
-                    </div>
-                </div>
-            </section>
 
-            <section id="interesting">
-                <div class="container">
-                    <h2>Qiziqarli</h2>
-                    <div class="interesting-project">
+                    <div class="swiper-slide slide">
+                        <div class="image">
+                            <a href="https://www.instagram.com/khalilov_ibrohim_uz/">
+                                <img src="/picture/instagram.svg" alt="Instagram">
+                            </a>
+                        </div>
                     </div>
-                </div>
-            </section>
 
-            <section id="contact">
-                <h2>Men bilan bog'lanish</h2>
-                <form id="contact-form">
-                    <input type="text" placeholder="Ism" required>
-                    <input type="email" placeholder="Email" required>
-                    <textarea placeholder="Xabaringiz" required></textarea>
-                    <button type="submit">Jo'natish</button>
-                </form>
-            </section>
-
-            <section id="social">
-                <div class="container">
-                    <h2>Ijtimoiy tarmoqlarda men</h2>
-                    <div class="social-icons">
-                        <!-- Ijtimoiy tarmoq ikonkalari shu yerdan boshlanadi -->
-                        <div class="social-icon">Telegram</div>
-                        <div class="social-icon">Instagram</div>
-                        <div class="social-icon">YouTube</div>
-                        <div class="social-icon">LinkedIn</div>
-                        <div class="social-icon">GitHub</div>
-                        <!-- Ijtimoiy tarmoq ikonkalari shu yerdan tugaydi -->
+                    <div class="swiper-slide slide">
+                        <div class="image">
+                            <a href="https://www.youtube.com/@alien_dev_uz/">
+                                <img src="/picture/youtube.svg" alt="YouTube">
+                            </a>
+                        </div>
                     </div>
-                </div>
-            </section>
-        </main>
 
-        <footer>
-            <div class="footer-top">
-                <div class="footer-left">
-                    <ul class="menu">
-                        <li><a href="#about">Men haqimda</a></li>
-                        <li><a href="#resume">Rezyume</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#interesting">Qiziqarli</a></li>
-                        <li><a href="#contact">Men bilan bog'lanish</a></li>
-                    </ul>
-                </div>
-                <div class="footer-right">
-                    <ul class="menu">
-                        <li>Telefon: +998 (95) 065 08 20</li>
-                        <li>Email: khalilovibrohimuz@gmail.com</li>
-                    </ul>
+                    <div class="swiper-slide slide">
+                        <div class="image">
+                            <a href="https://www.linkedin.com/in/khalilovibrohimuz/">
+                                <img src="/picture/linkedin.svg" alt="LinkedIn">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide slide">
+                        <div class="image">
+                            <a href="https://www.github.com/khalilovibrohimuz/">
+                                <img src="/picture/github.svg" alt="GitHub">
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2023 Portfolio</p>
-            </div>
-        </footer>
+        </section>
 
-        <script src="index.js"></script>
+        <section class="footer">
+
+            <div class="box-container">
+
+                <div class="box">
+                    <h3>Navigatsiya</h3>
+                    <a href="#about" class="link">Men haqimda</a>
+                    <a href="#resume" class="link">Rezyume</a>
+                    <a href="#portfolio" class="link">Portfolio</a>
+                    <a href="#interesting" class="link">Qiziqarli</a>
+                    <a href="#email" class="link">Email yuborish</a>
+                </div>
+
+                <div class="box">
+                    <h3>Boshqalar</h3>
+                    <p> Telefon: +998 (95) 065-08-20 </p>
+                    <p> Email: khalilovibrohimuz@gmail.com </p>
+                    <p> Qo'shimcha: Hech narsa </p>
+                </div>
+            </div>
+
+            <div class="credit">
+                <p>
+                    E'tiboringiz uchun rahmat!<br>
+                    &copy; Khalilov Ibrohim's Portfolio 2023<br>
+                    Created by Aminjonova Ozoda<br>
+                    Stolen by Khalilov Ibrohim 😂
+                </p>
+            </div>
+        </section>
+
+        <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+        <script src="js/script.js"></script>
     </body>
 </html>
