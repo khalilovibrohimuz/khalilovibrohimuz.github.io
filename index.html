@@ -1,73 +1,124 @@
 <!DOCTYPE html>
-<html>
-  <head>
-  
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Khalilov Ibrohim's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-  
-  </head>
-  
-  <body>
-
+<html lang="uz">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfoliom</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
     <div class="background-image"></div>
 
-    <header>
-      <div class="header-container">
-        <div class="header-name">Khalilov Ibrohim</div>
-        <nav class="header-nav">
-          <a href="#about_me">Men haqimda</a>
-          <a href="#resume">Rezyume</a>
-          <a href="#portfolio">Portfolio</a>
-          <a href="#contact">Aloqa</a>
+    <body>
+        <header>
+            <div class="container">
+                <div class="logo">Kahlilov Ibrohim</div>
+                <nav>
+                    <input type="checkbox" id="toggle-menu">
+                    <label for="toggle-menu" class="menu-icon">&#9776;</label>
+                    <ul class="menu">
+                        <li><a href="#about">Men haqimda</a></li>
+                        <li><a href="#resume">Rezyume</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#interesting">Qiziqarli</a></li>
+                        <li><a href="#contact">Men bilan bog'lanish</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
 
-          <button onclick="toggleTheme()">Odatiy mavzu</button>
+        <main>            
+            <section id="about">
+                <div class="container">
+                    <h2>Men haqimda</h2>
+                    <p>Salom, men Android dasturchiman. O'zim haqimda qisqacha ma'lumotlar...</p>
+                </div>
+            </section>
 
-        </nav>
-      </div>
-    </header>    
+            <section id="resume">
+                <div class="container">
+                    <h2>Rezyume</h2>
+                    <p>Bu mening tajribalarim va ma'lumotlarim to'g'risida qisqacha...</p>
+                </div>
+            </section>
 
-    <main>
-      <section id="about_me">
-        <h2>Men haqimda</h2>
-        <p>Bu yerda men haqimda ma'lumot yoziladi.</p>
-      </section>
-    
-      <section id="resume">
-        <h2>Rezyume</h2>
-        <p>Bu yerda mening rezyumem yoziladi.</p>
-      </section>
-    
-      <section id="portfolio">
-        <h2>Portfolio</h2>
-        <p>Bu yerda mening ishlarim yoziladi.</p>
-      </section>
-    
-      <section id="contact">
-        <h2>Aloqa</h2>
-        <p>Bu yerda menga email yuborish uchun ma'lumot yoziladi.</p>
-      </section>
-    </main>    
+            <section id="portfolio">
+                <div class="container">
+                    <h2>Portfolio</h2>
+                    <p>Barcha loyihalarim bir joyda</p>
+                    <div class="project">
+                        <h3>Proyekt 1</h3>
+                        <p>Bu proyekt haqida qisqacha ma'lumotlar...</p>
+                    </div>
+                    <div class="project">
+                        <h3>Proyekt 2</h3>
+                        <p>Bu proyekt haqida qisqacha ma'lumotlar...</p>
+                    </div>
+                    <div class="project">
+                        <h3>Proyekt 3</h3>
+                        <p>Bu proyekt haqida qisqacha ma'lumotlar...</p>
+                    </div>
+                </div>
+            </section>
 
-    <footer>
-      <div class="footer-container">
-        <div class="footer-text">Bu yerda matn yoziladi</div>
-        <div class="footer-socials">
-          <ul>
-            <li><a href="https://t.me/uzbekcha_dasturlar/"><img src="assets/picture/telegram_channel.svg" alt="O'zbekcha dasturlar"> https://t.me/uzbekcha_dasturlar/ </a></li>
-            <li><a href="https://www.linkedin.com/in/khalilovibrohimuz/"><img src="assets/picture/linkedin.svg" alt="Khalilov Ibrohim"> https://www.linkedin.com/in/khalilovibrohimuz/ </a></li>
-            <li><a href="https://www.instagram.com/khalilov_ibrohim_uz/"><img src="assets/picture/instagram.svg" alt="Khalilov Ibrohim"> https://www.instagram.com/khalilov_ibrohim_uz/ </a></li>
-            <li><a href="https://www.instagram.com/uzbekcha_dasturlar/"><img src="assets/picture/instagram.svg" alt="O'zbekcha dasturlar"> https://www.instagram.com/uzbekcha_dasturlar/ </a></li>
-            <li><a href="https://www.github.com/khalilovibrohimuz/"><img src="assets/picture/github.svg" alt="Khalilov Ibrohim"> https://www.github.com/khalilovibrohimuz/ </a></li>
-            <li><a href="https://www.github.com/aliendevuz/"><img src="assets/picture/github.svg" alt="Alien developer"> https://www.github.com/aliendevuz/ </a></li>
-            <li><a href="https://www.youtube.com/@alien_dev_uz/"><img src="assets/picture/youtube.svg" alt="Alien developer"> https://www.youtube.com/@alien_dev_uz/ </a></li>
-          </ul>
-        </div>
-      </div>
-    </footer>     
+            <section id="interesting">
+                <div class="container">
+                    <h2>Qiziqarli</h2>
+                    <div class="interesting-project">
+                    </div>
+                </div>
+            </section>
 
-    <script src="index.js"></script>
-  </body>
+            <section id="contact">
+                <h2>Men bilan bog'lanish</h2>
+                <form id="contact-form">
+                    <input type="text" placeholder="Ism" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Xabaringiz" required></textarea>
+                    <button type="submit">Jo'natish</button>
+                </form>
+            </section>
 
+            <section id="social">
+                <div class="container">
+                    <h2>Ijtimoiy tarmoqlarda men</h2>
+                    <div class="social-icons">
+                        <!-- Ijtimoiy tarmoq ikonkalari shu yerdan boshlanadi -->
+                        <div class="social-icon">Telegram</div>
+                        <div class="social-icon">Instagram</div>
+                        <div class="social-icon">YouTube</div>
+                        <div class="social-icon">LinkedIn</div>
+                        <div class="social-icon">GitHub</div>
+                        <!-- Ijtimoiy tarmoq ikonkalari shu yerdan tugaydi -->
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-top">
+                <div class="footer-left">
+                    <ul class="menu">
+                        <li><a href="#about">Men haqimda</a></li>
+                        <li><a href="#resume">Rezyume</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#interesting">Qiziqarli</a></li>
+                        <li><a href="#contact">Men bilan bog'lanish</a></li>
+                    </ul>
+                </div>
+                <div class="footer-right">
+                    <ul class="menu">
+                        <li>Telefon: +998 (95) 065 08 20</li>
+                        <li>Email: khalilovibrohimuz@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Portfolio</p>
+            </div>
+        </footer>
+
+        <script src="index.js"></script>
+    </body>
 </html>
