@@ -25,7 +25,7 @@ html {
 }
 
 html::-webkit-scrollbar {
-  width: 1rem;
+  width: 0rem;
 }
 
 html::-webkit-scrollbar-track {
@@ -1041,4 +1041,16 @@ section {
   .about .content .about-title {
     font-size: 4rem;
   }
+}
+
+pre {
+    font-family: Courier, monospace;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+    background-color: rgb(0, 18, 24);
+    color: rgb(242, 244, 255);
+    font-size: smaller;
 }
