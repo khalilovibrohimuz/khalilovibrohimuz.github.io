@@ -9,12 +9,13 @@ document.querySelector('#close-navbar').onclick = () =>{
 };
 
 var swiper = new Swiper(".swiper-container", {
-  loop: true,
+  loop: false,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
   autoplay: {
     delay: 2400
-  }
+  },
+  slidesPerView: 3,
 });

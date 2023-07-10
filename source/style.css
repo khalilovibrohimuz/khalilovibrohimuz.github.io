@@ -106,13 +106,20 @@ section {
 .header {
   position: -webkit-sticky;
   position: sticky;
+  margin-left: 2%;
+  margin-right: 2%;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
   top: 0;
   left: 0;
   right: 0;
-  background: rgb(2, 161, 36);
-  -webkit-box-shadow: 0 0.5rem 1rem rgb(245, 241, 241);
-          box-shadow: 0 0.5rem 1rem rgba(29, 28, 28, 0.863);
-  padding: 2rem 10%;
+  background: rgba(0, 128, 255, 0.72);
+  -webkit-box-shadow: 0 1rem 1rem rgb(255, 255, 255);
+          box-shadow: 0 1rem 1rem rgba(0, 128, 255, 0.4);
+  padding-left: 112px;
+  padding-right: 112px;
+  padding-top: 2.4%;
+  padding-bottom: 2.4%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -124,11 +131,16 @@ section {
 
 .header .logo {
   margin-right: auto;
-  font-size: 2.5rem;
+  font-size: 48px;
   font-family: magneto;
   text-transform: capitalize;
-  color: rgb(213, 230, 214);
+  color: rgb(224, 240, 255);
   font-weight: bolder;
+}
+
+.header .logo:hover {
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 18px rgb(255, 255, 255);
 }
 
 
@@ -142,24 +154,27 @@ section {
   right: 2rem;
   font-size: 4rem;
   cursor: pointer;
-  color: rgb(245, 240, 240);
+  color: rgba(224, 240, 255);
   display: none;
 }
 
 .header .navbar #close-navbar:hover {
+  color: white;
+  text-shadow: 0 0 10px rgb(255, 255, 255);
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
 }
 
 .header .navbar a {
   margin-right: 2rem;
-  font-size: 2rem;
+  font-size: 28px;
   text-transform: capitalize;
-  color: rgb(255, 255, 255);
+  color: rgb(224, 240, 255);
 }
 
 .header .navbar a:hover {
-  color: #0eb51c;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 10px rgb(255, 255, 255);
 }
 
 .header .icons div {
@@ -178,23 +193,6 @@ section {
 }
 
 
-
-/* .swiper-container {
-  width: 100%;
-  height: auto;
-}
-
-.swiper-slide {
-  margin: 20px;
-}
-
-.swiper-slide img {
-  width: 100%;
-  height: auto;
-} */
-
-
-
 /* tushunmadim, u hech narsani o'zgartirmadi */
 .logo-container {
   text-align: center;
@@ -206,6 +204,36 @@ section {
 }
 
 
+.project {
+  background-color: rgb(220, 232, 255);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 40px;
+  border-radius: 20px;
+}
+
+
+/* .swiper-container {
+  width: 80%;
+  height: auto;
+} */
+
+.swiper-slide {
+  margin: 20px;
+}
+
+.slide-card {
+  background-color: rgba(0, 128, 255, 0.2);
+  border-radius: 25%;
+  padding: 18%;
+  border: 2px solid rgb(0, 128, 255);
+}
+
+
+/* .swiper-slide img {
+  width: 100%;
+  height: auto;
+} */
 
 
 /* Ushbu qismi kerak va u footer qismini qanday ko'rinishini belgilaydi */
