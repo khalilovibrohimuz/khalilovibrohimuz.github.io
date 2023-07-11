@@ -279,6 +279,21 @@ html {
   height: auto;
 } */
 
+.cursor {
+  position:fixed;
+  top: 0;
+  left: 0;
+  display: block;
+  pointer-events: none;
+  opacity: 1
+}
+
+.cursor__inner {
+  fill: none;
+  stroke: rgb(0, 128, 255);
+  stroke-width: 1px
+}
+
 /* Ushbu qismi kerak va u footer qismini qanday ko'rinishini belgilaydi */
 .footer {
   background: rgba(0, 128, 255, 0.52);
@@ -371,6 +386,7 @@ html {
 }
 
 @media (max-width: 991px) {
+  
   html {
     font-size: 80%;
   }
@@ -383,6 +399,11 @@ html {
 }
 
 @media (max-width: 768px) {
+
+  .cursor {
+    opacity: 0;
+  }
+
   .header #menu-btn {
     display: inline-block;
   }

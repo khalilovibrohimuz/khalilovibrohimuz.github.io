@@ -14,6 +14,67 @@ document.querySelectorAll('.navbar a').forEach(link => {
   };
 });
 
+// Kursor elementi
+
+const cursor = document.querySelector('.cursor');
+const cursorInner = document.querySelector('.cursor__inner');
+const filter = document.querySelector('#filter-1 feTurbulence');
+let mouseX = 0;
+let mouseY = 0;
+let cursorX = 0;
+let cursorY = 0;
+
+document.addEventListener('mousemove', event => {
+  mouseX = event.clientX - cursor.getBoundingClientRect().width / 4.6;
+  mouseY = event.clientY - cursor.getBoundingClientRect().height / 4.6;
+});
+
+document.addEventListener('mousedown', () => {
+  filter.setAttribute("type", "fractalNoise");
+  filter.setAttribute("baseFrequency", "0.02 0.15");
+  filter.setAttribute("numOctaves", "3");
+  filter.setAttribute("result", "warp");
+});
+
+document.addEventListener('mouseup', () => {
+  filter.setAttribute("type", "fractalNoise");
+  filter.setAttribute("baseFrequency", "0.02 0.15");
+  filter.setAttribute("numOctaves", "3");
+  filter.setAttribute("result", "warp");
+});
+
+const links = document.querySelectorAll('a');
+
+links.forEach(link => {
+  link.addEventListener('mouseenter', () => {
+    filter.setAttribute("type", "fractalNoise");
+    filter.setAttribute("baseFrequency", "0.02 0.15");
+    filter.setAttribute("numOctaves", "3");
+    filter.setAttribute("result", "warp");
+  });
+
+  link.addEventListener('mouseleave', () => {
+    filter.setAttribute("type", "fractalNoise");
+    filter.setAttribute("baseFrequency", "0.02 0.15");
+    filter.setAttribute("numOctaves", "3");
+    filter.setAttribute("result", "warp");
+  });
+});
+
+function animate() {
+  cursorX += (mouseX - cursorX) * 0.2;
+  cursorY += (mouseY - cursorY) * 0.2;
+
+  cursor.style.transform = `translate3d(${cursorX}px, ${cursorY}px, 0)`;
+
+  requestAnimationFrame(animate);
+}
+
+animate();
+
+
+// kursor elementining oxiri
+
 const form = document.querySelector('#contact-form');
 
 form.addEventListener('submit', event => {
