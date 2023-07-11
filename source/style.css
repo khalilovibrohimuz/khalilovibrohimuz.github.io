@@ -291,7 +291,8 @@ html {
 .cursor__inner {
   fill: none;
   stroke: rgb(0, 128, 255);
-  stroke-width: 1px
+  stroke-width: 1px;
+  filter: drop-shadow(0px 0px 2px rgb(0, 128, 255));
 }
 
 /* Ushbu qismi kerak va u footer qismini qanday ko'rinishini belgilaydi */

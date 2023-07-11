@@ -27,6 +27,11 @@ let cursorY = 0;
 document.addEventListener('mousemove', event => {
   mouseX = event.clientX - cursor.getBoundingClientRect().width / 4.6;
   mouseY = event.clientY - cursor.getBoundingClientRect().height / 4.6;
+  if (brightness > 128) {
+    cursorInner.style.stroke = 'blue';
+  } else {
+    cursorInner.style.stroke = 'white';
+  }
 });
 
 document.addEventListener('mousedown', () => {
@@ -60,6 +65,12 @@ links.forEach(link => {
     filter.setAttribute("result", "warp");
   });
 });
+
+function getBrightness(x, y) {
+  const imageData = ctx.getImageData(x, y, 1, 1).data;
+  // return (imageData[0] + imageData[1] + imageData[2]) / 3;
+  return 0;
+}
 
 function animate() {
   cursorX += (mouseX - cursorX) * 0.2;
