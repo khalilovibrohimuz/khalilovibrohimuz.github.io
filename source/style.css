@@ -3,7 +3,12 @@
 
 @font-face {
   font-family: magneto;
-  src: url("font/magneto.TTF");
+  src: url("font/magneto.ttf");
+}
+
+@font-face {
+  font-family: calibri;
+  src: url("font/calibri.ttf");
 }
 
 /* Saytdagi barcha o'zgarishlarni amalga oshiruvchi qism */
@@ -39,9 +44,16 @@ html::-webkit-scrollbar {
   width: 0rem;
 }
 
+body {
+  font-family: calibri;
+  color: rgb(0, 128, 255);
+}
+
+
 /* Ushbu qism barcha alohida qismlarning ko'rinishini belgilaydi */
 section {
   padding: 5rem 10%;
+  background-color: rgba(255, 255, 255, 0.72);
 }
 
 /* Ushbu qism barcha sarlavhalar uchun yozilgan */
@@ -61,11 +73,11 @@ section {
 .heading-link p {
   font-size: 2rem;
   line-height: 2;
-  color: rgb(2, 133, 2);
+  color: rgb(0, 128, 255);
 }
 
 .heading-link p a {
-  color: rgb(2, 133, 2);
+  color: rgb(0, 128, 255);
 }
 
 .heading-link p a:hover {
@@ -77,30 +89,8 @@ section {
   margin-bottom: 3rem;
   font-size: 3.5rem;
   text-transform: capitalize;
-  color: rgb(27, 150, 23);
+  color: rgb(64, 160, 255);
 }
-
-
-
-/* Ushbu qismi buttonni ko'rinsihi belgilab beradi */
-.btn {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 1rem 3rem;
-  font-size: 1.8rem;
-  border: 0.1rem solid #0eb538;
-  background: #f0fdfa;
-  color: #0eb524;
-  cursor: pointer;
-  text-transform: capitalize;
-}
-
-.btn:hover {
-  background: #3df80e;
-  color: #fff;
-}
-
-
 
 /* Ushbu qismda headerga bog'liq o'zgarishlar amalga oshiriladi */
 .header {
@@ -115,7 +105,7 @@ section {
   right: 0;
   background: rgba(0, 128, 255, 0.72);
   -webkit-box-shadow: 0 1rem 1rem rgb(255, 255, 255);
-          box-shadow: 0 1rem 1rem rgba(0, 128, 255, 0.4);
+          box-shadow: 0 0.5rem 1rem rgba(0, 128, 255, 0.4);
   padding-left: 112px;
   padding-right: 112px;
   padding-top: 2.4%;
@@ -131,7 +121,6 @@ section {
 
 .header .logo {
   margin-right: auto;
-  font-size: 48px;
   font-family: magneto;
   text-transform: capitalize;
   color: rgb(224, 240, 255);
@@ -161,13 +150,13 @@ section {
 .header .navbar #close-navbar:hover {
   color: white;
   text-shadow: 0 0 10px rgb(255, 255, 255);
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  /* -webkit-transform: rotate(90deg); */
+          /* transform: rotate(90deg); */
 }
 
 .header .navbar a {
   margin-right: 2rem;
-  font-size: 28px;
+  /* font-size: 28px; */
   text-transform: capitalize;
   color: rgb(224, 240, 255);
 }
@@ -175,17 +164,24 @@ section {
 .header .navbar a:hover {
   color: rgb(255, 255, 255);
   text-shadow: 0 0 10px rgb(255, 255, 255);
+  text-decoration: underline;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 
 .header .icons div {
   cursor: pointer;
   font-size: 2.5rem;
-  color: #444;
+  color: rgb(224, 240, 255);
   margin-left: 1.5rem;
 }
 
 .header .icons div:hover {
-  color: #0eb582;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 10px rgb(255, 255, 255);
 }
 
 .header #menu-btn {
@@ -205,11 +201,58 @@ section {
 
 
 .project {
-  background-color: rgb(220, 232, 255);
+  background-color: rgba(0, 128, 255, 0.5);
+  border: 1px solid rgb(0, 128, 255);
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 40px;
   border-radius: 20px;
+}
+
+#portfolio a {
+  color: rgb(255, 255, 255);
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  background-color: rgba(0, 128, 255, 0.32);
+  padding: 4%;
+  border-radius: 8px;
+  color: #fff;
+  resize: none;
+}
+
+#contact-form textarea {
+  height: 200px;
+  overflow: auto;
+}
+
+#contact-form textarea::-webkit-scrollbar {
+  display: none;
+}
+
+
+#contact-form button {
+  background-color: rgba(0, 128, 255, 0.32);
+  padding: 4%;
+  border-radius: 8px;
+  /* border: none; */
+  /* border-radius: 5px; */
+  cursor: pointer;
+  color: white;
+  border: 1px solid rgb(0, 128, 255);
+}
+
+#contact-form input::placeholder,
+#contact-form textarea::placeholder {
+  color: rgb(224, 240, 255);
 }
 
 
@@ -218,15 +261,16 @@ section {
   height: auto;
 } */
 
+
 .swiper-slide {
-  margin: 20px;
+  margin-right: 20px;
 }
 
 .slide-card {
   background-color: rgba(0, 128, 255, 0.2);
   border-radius: 25%;
   padding: 18%;
-  border: 2px solid rgb(0, 128, 255);
+  border: 1px solid rgb(0, 128, 255);
 }
 
 
@@ -235,10 +279,9 @@ section {
   height: auto;
 } */
 
-
 /* Ushbu qismi kerak va u footer qismini qanday ko'rinishini belgilaydi */
 .footer {
-  background: #f0fdfa;
+  background: rgba(0, 128, 255, 0.52);
 }
 
 .footer .box-container {
@@ -252,7 +295,7 @@ section {
 .footer .box-container .box h3 {
   font-size: 2.2rem;
   text-transform: capitalize;
-  color: #444;
+  color: rgb(255, 255, 255);
   padding: 1rem 0;
 }
 
@@ -282,48 +325,42 @@ section {
 .footer .box-container .box .link {
   font-size: 1.7rem;
   line-height: 2;
-  color: #777;
+  color: rgb(224, 240, 255);
   padding: .5rem 0;
   display: block;
 }
 
 .footer .box-container .box .link:hover {
-  color: #2ab50e;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 1);
   text-decoration: underline;
 }
 
 .footer .box-container .box p {
   font-size: 1.5rem;
   line-height: 2;
-  color: #777;
+  color: rgb(224, 240, 255);
   padding: 1rem 0;
 }
 
-.footer .box-container .box .email {
-  width: 100%;
-  padding: 1.2rem 1.4rem;
-  font-size: 1.6rem;
-  border: 0.1rem solid #21b50e;
-  margin-bottom: 1rem;
-}
 
 .footer .credit {
   text-align: center;
   margin-top: 3rem;
   padding-top: 3rem;
-  font-size: 2rem;
+  font-size: 1rem;
   text-transform: capitalize;
-  color: #444;
-  border-top: 0.1rem solid #0eb52a;
+  color: rgb(224, 240, 255);
+  border-top: 0.1rem solid rgb(64, 160, 255);
 }
 
 .footer .credit span {
-  color: #0eb51c;
+  color: rgb(0, 128, 255);
 }
 
 
 
-/* shu @media degan qismiga tushunmadimda, nima vazifa bajarayotgani aniqmas */
+/* @medianing vazifasi har bir o'lcham uchun alohida ko'rinishni tayyorlash */
 @media (max-width: 1200px) {
   .header {
     padding: 2rem 5%;
@@ -335,7 +372,7 @@ section {
 
 @media (max-width: 991px) {
   html {
-    font-size: 55%;
+    font-size: 80%;
   }
   .header {
     padding: 2rem;
@@ -353,8 +390,8 @@ section {
     position: fixed;
     top: 0;
     right: -105%;
-    width: 30rem;
-    background: #fff;
+    width: 80%;
+    background: rgba(0, 128, 255, 0.72);
     height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -372,8 +409,8 @@ section {
     display: block;
   }
   .header .navbar.active {
-    -webkit-box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
-            box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
+    /* -webkit-box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8); */
+            /* box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8); */
     right: 0;
   }
   .header .navbar a {
@@ -389,13 +426,21 @@ section {
 
 @media (max-width: 450px) {
   html {
-    font-size: 50%;
+    font-size: 64%;
   }
   .heading {
     font-size: 3rem;
   }
   .about .content .about-title {
     font-size: 4rem;
+  }
+}
+
+
+
+@media (max-width: 600px) {
+  pre {
+    font-size: 5px;
   }
 }
 
@@ -410,5 +455,23 @@ pre {
     border-radius: 20px;
     background-color: rgb(0, 18, 24);
     color: rgb(242, 244, 255);
-    font-size: smaller;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+body::before {
+  content: "";
+  background-image: url("picture/background_light.jpg");
+  filter: blur(12px);
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
